@@ -80,7 +80,7 @@ body {
     font-family: "Albert Sans", sans-serif;
     font-size: 17px;
     line-height: 28px;
-    color: #8d9aa8;
+    color: #02AEEE;
     font-weight: 400;
     letter-spacing: -0.2px;
     position: relative;
@@ -559,7 +559,7 @@ button {
 
 .carousel-dots .slick-dots li button {
     display: inline-block;
-    background-color: #8d9aa8;
+    background-color: #02AEEE;
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -3526,21 +3526,21 @@ blockquote span {
 }
 
 .search-form input::-webkit-input-placeholder {
-    color: #8d9aa8 !important;
+    color: #02AEEE !important;
 }
 
 .search-form input:-moz-placeholder {
     /* Firefox 18- */
-    color: #8d9aa8 !important;
+    color: #02AEEE !important;
 }
 
 .search-form input::-moz-placeholder {
     /* Firefox 19+ */
-    color: #8d9aa8 !important;
+    color: #02AEEE !important;
 }
 
 .search-form input:-ms-input-placeholder {
-    color: #8d9aa8 !important;
+    color: #02AEEE !important;
 }
 
 /* Thumbnails Post */

@@ -97,7 +97,7 @@
 	overflow: hidden;
 }
 .dl-slider .dl-btn{
-	background-color: #563435;
+	background-color: #CC3237;
 	display: inline-block;
 	color: var(--light);
 	font-size: 15px;
@@ -201,7 +201,7 @@
     outline: none;
 }
 .dl-slider .slick-dots li.slick-active button{
-    background-color: #563435;
+    background-color: #CC3237;
     transition: all 0.3s ease-in-out;
 }
 /* Vertical Dots */

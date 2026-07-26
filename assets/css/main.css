@@ -80,7 +80,7 @@ body {
     font-family: "Albert Sans", sans-serif;
     font-size: 17px;
     line-height: 28px;
-    color: #02AEEE;
+    color: #363435;
     font-weight: 400;
     letter-spacing: -0.2px;
     position: relative;
@@ -559,7 +559,7 @@ button {
 
 .carousel-dots .slick-dots li button {
     display: inline-block;
-    background-color: #02AEEE;
+    background-color: #363435;
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -681,11 +681,11 @@ button {
 
 .header-logo img {
     max-width: 90%;
-    filter: brightness(0) invert(1) !important;
+    filter: none !important;
 }
 
 .header.header-one .header-logo img {
-    filter: brightness(0) invert(1) !important;
+    filter: none !important;
 }
 
 .sticky-header .primary-header .header-logo img {
@@ -3526,21 +3526,21 @@ blockquote span {
 }
 
 .search-form input::-webkit-input-placeholder {
-    color: #02AEEE !important;
+    color: #363435 !important;
 }
 
 .search-form input:-moz-placeholder {
     /* Firefox 18- */
-    color: #02AEEE !important;
+    color: #363435 !important;
 }
 
 .search-form input::-moz-placeholder {
     /* Firefox 19+ */
-    color: #02AEEE !important;
+    color: #363435 !important;
 }
 
 .search-form input:-ms-input-placeholder {
-    color: #02AEEE !important;
+    color: #363435 !important;
 }
 
 /* Thumbnails Post */

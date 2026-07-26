@@ -60,7 +60,7 @@ Author:    https://themeforest.net/user/designsninja/portfolio
 }
 
 :root {
-    --primary: #585758;
+    --primary: #a2a2a2;
     --secondary: #CC3237;
     --light: #F5F5F5;
     --dark: #212529;
@@ -80,7 +80,7 @@ body {
     font-family: "Albert Sans", sans-serif;
     font-size: 17px;
     line-height: 28px;
-    color: #363435;
+    color: #757475;
     font-weight: 400;
     letter-spacing: -0.2px;
     position: relative;
@@ -99,7 +99,7 @@ h6 {
 }
 
 h1 {
-    font-size: 62px;
+    font-size: 62px;updat
     font-weight: 700;
     line-height: 68px;
     margin: 0 0 10px;
@@ -3788,16 +3788,16 @@ blockquote span {
 .floating-whatsapp {
     position: fixed;
     right: 40px;
-    bottom: 80px;
+    bottom: 90px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 25px;
     min-width: 25px;
-    height: 30px;
+    height: 25px;
     padding: 0;
     border-radius: 50%;
-    color: #fff;
+    color: #f3f3f3;
     background-color: #25D366;
     box-shadow: 0 10px 18px rgba(0, 0, 0, 0.16);
     text-align: center;

@@ -63,7 +63,7 @@ Author:    https://themeforest.net/user/designsninja/portfolio
     --primary: #363636;
     --secondary: #CC3237;
     --light: #F5F5F5;
-    --dark: #212529;
+    --dark: #313131;
     --white: #ffffff;
     --l-dark: #363636;
 }
@@ -2327,7 +2327,7 @@ button {
 }
 
 .project-inner:before {
-    background: linear-gradient(to bottom, rgba(36, 127, 251, 0) 0%, #212529 100%);
+    background: linear-gradient(to bottom, rgba(36, 127, 251, 0) 0%, #313131 100%);
     position: absolute;
     content: "";
     width: 100%;

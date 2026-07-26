@@ -3787,14 +3787,14 @@ blockquote span {
 
 .floating-whatsapp {
     position: fixed;
-    right: 20px;
-    bottom: 90px;
+    right: 40px;
+    bottom: 80px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 48px;
-    min-width: 48px;
-    height: 48px;
+    width: 25px;
+    min-width: 25px;
+    height: 30px;
     padding: 0;
     border-radius: 50%;
     color: #fff;
@@ -3809,9 +3809,13 @@ blockquote span {
     transform: translateY(-2px);
 }
 
-.floating-socials .social-btn i,
-.floating-whatsapp i {
+.floating-socials .social-btn i
+ {
     font-size: 14px;
+}
+
+.floating-whatsapp i{
+    font-size: 30px;
 }
 
 .floating-whatsapp span {

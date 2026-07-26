@@ -1,6 +1,6 @@
 /*  =====================================================
 
-Template:    Archid - Architecture & Interior HTML5 Template
+Template:    Revoxen - Architecture & Interior HTML5 Template
 Version:    1.0
 Last change:    08/09/25 
 Author:    https://themeforest.net/user/designsninja/portfolio
@@ -60,7 +60,7 @@ Author:    https://themeforest.net/user/designsninja/portfolio
 }
 
 :root {
-    --primary: #a2a2a2;
+    --primary: #363636;
     --secondary: #CC3237;
     --light: #F5F5F5;
     --dark: #212529;
@@ -80,7 +80,7 @@ body {
     font-family: "Albert Sans", sans-serif;
     font-size: 17px;
     line-height: 28px;
-    color: #757475;
+    color: #EDEDED;
     font-weight: 400;
     letter-spacing: -0.2px;
     position: relative;

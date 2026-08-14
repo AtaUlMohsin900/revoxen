@@ -92,7 +92,7 @@ body {
     font-weight: 400;
     letter-spacing: -0.2px;
     position: relative;
-    overflow-x: hidden;
+    overflow-x: hidden; 
 }
 
 h1,
@@ -4007,8 +4007,47 @@ blockquote span {
     }
 }
 
+
+
 /* Text Design  */
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+/* body {
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+} */
+h1 {
+  color: hsl(0, 0%, 28%);
+  font-size: 50px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 7px;
+  cursor: pointer;
+}
+
+h1 span {
+  transition: 0.5s ease-out;
+}
+h1:hover span:nth-child(1) {
+  margin-right: 5px;
+}
+/* h1:hover span:nth-child(1):after {
+  content: "'";
+} */    
+h1:hover span:nth-child(2) {
+  margin-left: none;
+}
+h1:hover span {
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}
+/* End Text Design  */
+
+
+/* @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400'); */
 /* body {
   margin:0px;
   text-align:center;
@@ -4021,7 +4060,7 @@ blockquote span {
   animation:bg 5s linear infinite;
 } */
 
-.dropping-texts {
+/* .dropping-texts {
   display: inline-block;
   width: 180px;
   text-align: left;
@@ -4089,7 +4128,7 @@ blockquote span {
     margin-top:0px;
     transform: rotate(15deg);
   }
-}
+} */
 
 @keyframes roll2 {
   0% {

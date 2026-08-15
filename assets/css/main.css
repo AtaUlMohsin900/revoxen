@@ -70,9 +70,9 @@ Author:    https://themeforest.net/user/designsninja/portfolio
 :root {
     --primary: #1a1a1a;
     --secondary: #CC3237;
-    --light: #F5F5F5;
+    --light: #efe7ea;
     --dark: #1a1a1a;
-    --white: #ffff;
+    --white: #efe7ea;
     --l-dark: #1a1a1a;
 }
 
@@ -84,7 +84,7 @@ body {
 }
 
 body {
-    background-color: #fff;
+    background-color: #efe7ea;
     font-family: "Albert Sans";
     font-size: 17px;
     line-height: 28px;
@@ -177,24 +177,24 @@ a:focus {
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-    color: #ddd !important;
+    color: #E9E9EC !important;
 }
 
 input:-moz-placeholder,
 textarea:-moz-placeholder {
     /* Firefox 18- */
-    color: #ddd !important;
+    color: #E9E9EC !important;
 }
 
 input::-moz-placeholder,
 textarea::-moz-placeholder {
     /* Firefox 19+ */
-    color: #ddd !important;
+    color: #E9E9EC !important;
 }
 
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-    color: #ddd !important;
+    color: #E9E9EC !important;
 }
 
 button {

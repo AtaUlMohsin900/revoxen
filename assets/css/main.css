@@ -68,12 +68,12 @@ Author:    https://themeforest.net/user/designsninja/portfolio
 }
 
 :root {
-    --primary: #363636;
+    --primary: #1a1a1a;
     --secondary: #CC3237;
     --light: #F5F5F5;
-    --dark: #313131;
-    --white: #ffffff;
-    --l-dark: #363636;
+    --dark: #1a1a1a;
+    --white: #ffff;
+    --l-dark: #1a1a1a;
 }
 
 html,
@@ -92,7 +92,7 @@ body {
     font-weight: 400;
     letter-spacing: -0.2px;
     position: relative;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 h1,
@@ -1420,9 +1420,9 @@ button {
 
 .primary-header-two .header-right .header-cart-btn a {
     color: #fff;
-}hero-content
+}
 
-@media (max-width: 992px) {
+hero-content @media (max-width: 992px) {
     .header-two {
         border: none;
     }
@@ -1764,7 +1764,7 @@ button {
 
 .hero-section .hero-content h1 {
     font-family: 'Montserrat', sans-serif !important;
-    color:#ffffff;
+    color: #ffffff;
     text-shadow: 0 1px 2px rgba(35, 32, 32, 0.5);
     font-weight: 600;
     font-style: normal;
@@ -1994,6 +1994,9 @@ button {
 }
 
 .service-content {
+    box-shadow:
+        0 0 20px rgba(0, 0, 0, 0.3),
+        inset 0 0 20px rgba(0, 0, 0, 0.2);
     background-color: #06ADF4;
     text-align: center;
     padding: 0 40px 40px;
@@ -3831,12 +3834,11 @@ blockquote span {
     transform: translateY(-2px);
 }
 
-.floating-socials .social-btn i
- {
+.floating-socials .social-btn i {
     font-size: 14px;
 }
 
-.floating-whatsapp i{
+.floating-whatsapp i {
     font-size: 30px;
 }
 
@@ -4020,87 +4022,128 @@ blockquote span {
   min-height: 100vh;
 } */
 h1 {
-  color: hsl(0, 0%, 28%);
-  font-size: 50px;
-  font-weight: bold;
-  font-family: monospace;
-  letter-spacing: 7px;
-  cursor: pointer;
+    color: hsl(0, 0%, 28%);
+    font-size: 50px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer;
 }
 
 h1 span {
-  transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
 }
+
 h1:hover span:nth-child(1) {
-  margin-right: 5px;
+    margin-right: 5px;
 }
+
 /* h1:hover span:nth-child(1):after {
   content: "'";
-} */    
+} */
 h1:hover span:nth-child(2) {
-  margin-left: none;
+    margin-left: none;
 }
+
 h1:hover span {
-  color: #fff;
-  text-shadow: 0 0 10px #11dffe, 0 0 20px #fff, 0 0 40px #fff;
+    color: #fff;
+    text-shadow: 0 0 10px #11dffe, 0 0 20px #fff, 0 0 40px #fff;
 }
+
 /* End Text Design  */
 
 
 
 
 @keyframes roll2 {
-  0% {
-    font-size:0px;
-    opacity:0;
-    margin-left:-30px;
-    margin-top:0px;
-    transform: rotate(-25deg);
-  }
-  3% {
-    opacity:1;
-    transform: rotate(0deg);
-  }
-  5% {
-    font-size:inherit;
-    opacity:1;
-    margin-left:0px;
-    margin-top:0px;
-  }
-  30% {
-    font-size:inherit;
-    opacity:1;
-    margin-left:0px;
-    margin-top:0px;
-    transform: rotate(0deg);
-  }
-  37% {
-    font-size:1500px;
-    opacity:0;
-    margin-left:-1000px;
-    margin-top:-800px;
-  }
-  100% {
-    font-size:0px;
-    opacity:0;
-    margin-left:-30px;
-    margin-top:0px;
-    transform: rotate(15deg);
-  }
+    0% {
+        font-size: 0px;
+        opacity: 0;
+        margin-left: -30px;
+        margin-top: 0px;
+        transform: rotate(-25deg);
+    }
+
+    3% {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+
+    5% {
+        font-size: inherit;
+        opacity: 1;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    30% {
+        font-size: inherit;
+        opacity: 1;
+        margin-left: 0px;
+        margin-top: 0px;
+        transform: rotate(0deg);
+    }
+
+    37% {
+        font-size: 1500px;
+        opacity: 0;
+        margin-left: -1000px;
+        margin-top: -800px;
+    }
+
+    100% {
+        font-size: 0px;
+        opacity: 0;
+        margin-left: -30px;
+        margin-top: 0px;
+        transform: rotate(15deg);
+    }
 }
 
 @keyframes bg {
-  0% {background: #ff0075;}
-  3% {background: #0094ff;}
-  20% {background: #0094ff;}
-  23% {background: #b200ff;}
-  40% {background: #b200ff;}
-  43% {background: #8BC34A;}
-  60% {background: #8BC34A;}
-  63% {background: #F44336;}
-  80% {background: #F44336;}
-  83% {background: #F44336;}
-  100% {background: #F44336;}
+    0% {
+        background: #ff0075;
+    }
+
+    3% {
+        background: #0094ff;
+    }
+
+    20% {
+        background: #0094ff;
+    }
+
+    23% {
+        background: #b200ff;
+    }
+
+    40% {
+        background: #b200ff;
+    }
+
+    43% {
+        background: #8BC34A;
+    }
+
+    60% {
+        background: #8BC34A;
+    }
+
+    63% {
+        background: #F44336;
+    }
+
+    80% {
+        background: #F44336;
+    }
+
+    83% {
+        background: #F44336;
+    }
+
+    100% {
+        background: #F44336;
+    }
 }
 
 /* max-width 420px */

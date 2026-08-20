@@ -1,9 +1,9 @@
 /*  =====================================================
 
-Template:    Revoxen - Architecture & Interior HTML5 Template
-Version:    1.0
-Last change:    08/09/25 
-Author:    https://themeforest.net/user/designsninja/portfolio
+Template:    Revoxen - Construction & IT Networking website
+Version:    1.2
+Last update:    19/08/26
+Author:    https://github.com/AtaUlMohsin900
 
 =====================================================*/
 
@@ -14,7 +14,6 @@ Author:    https://themeforest.net/user/designsninja/portfolio
     1.0 Common Styles
     2.0 Header Section
     3.0 About Section
-	4.0 Service Section
 	5.0 Projects Section
 		5.1 Project Style 2
     6.0 Projects Single Section
@@ -47,7 +46,7 @@ Author:    https://themeforest.net/user/designsninja/portfolio
 	20.0 Scroll To Top
 
 =====================================================
-    @DesignNinja
+    @ataulmohsin
 ===================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
@@ -88,7 +87,7 @@ body {
     font-family: "Albert Sans";
     font-size: 17px;
     line-height: 28px;
-    color: #645e5e;
+    color: #efe7ea;
     font-weight: 400;
     letter-spacing: -0.2px;
     position: relative;
@@ -2702,6 +2701,9 @@ hero-content @media (max-width: 992px) {
 /*==============================================
     COUNTER SECTION
 ==============================================*/
+
+/* From Uiverse.io by ElSombrero2 */
+
 .counter-section {
     background-image: url(../img/blue-bg.jpg);
     background-repeat: no-repeat;

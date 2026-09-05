@@ -3917,6 +3917,11 @@ blockquote span {
 
 /* max-width 767px */
 @media all and (max-width: 767px) {
+    .floating-socials {
+        left: auto;
+        right: 0;
+    }
+
     .padding {
         padding: 60px 0;
     }

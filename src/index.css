@@ -1,0 +1,24 @@
+@import "../assets/css/all.min.css";
+@import "../assets/css/themify-icons.css";
+@import "../assets/css/elegant-line-icons.css";
+@import "../assets/css/animate.min.css";
+@import "../assets/css/bootstrap.min.css";
+@import "../assets/css/slick.min.css";
+@import "../assets/css/slider.css";
+@import "../assets/css/magnific-popup.css";
+@import "../assets/css/nice-select.css";
+@import "../assets/css/odometer.min.css";
+@import "../assets/css/main.css";
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Albert Sans', sans-serif;
+}

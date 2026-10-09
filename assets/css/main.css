@@ -68,13 +68,19 @@ Author:    https://github.com/AtaUlMohsin900
 
 :root {
     /* Exact Colors Extracted directly from Revoxen Logo Files */
-    --logo-red: #EC3237;          /* Brand Crimson Red (Construction & Electrical) */
-    --logo-red-dark: #C52F32;     /* Deep Red Hover */
-    --logo-cyan: #00AFEF;         /* Electric Tech Cyan (IT & Networking) */
-    --logo-cyan-dark: #0088BC;    /* Darker Cyan Hover */
-    --logo-charcoal: #363435;     /* Structural Dark Charcoal */
-    --logo-slate: #858688;        /* Silver Tech Slate */
-    
+    --logo-red: #EC3237;
+    /* Brand Crimson Red (Construction & Electrical) */
+    --logo-red-dark: #C52F32;
+    /* Deep Red Hover */
+    --logo-cyan: #00AFEF;
+    /* Electric Tech Cyan (IT & Networking) */
+    --logo-cyan-dark: #0088BC;
+    /* Darker Cyan Hover */
+    --logo-charcoal: #363435;
+    /* Structural Dark Charcoal */
+    --logo-slate: #858688;
+    /* Silver Tech Slate */
+
     /* Core System Aliases */
     --primary: #363435;
     --secondary: #EC3237;
@@ -83,7 +89,7 @@ Author:    https://github.com/AtaUlMohsin900
     --dark: #1E1C1D;
     --dark-surface: #292728;
     --white: #FFFFFF;
-    
+
     /* Text Mapping */
     --text-dark: #363435;
     --text-muted: #606062;
@@ -135,7 +141,8 @@ Author:    https://github.com/AtaUlMohsin900
 }
 
 /* IT & Networking Accent Badges & Highlights */
-.tech-cyan, .badge-cyan {
+.tech-cyan,
+.badge-cyan {
     color: var(--logo-cyan) !important;
 }
 

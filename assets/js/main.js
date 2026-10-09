@@ -137,11 +137,11 @@
                         console.warn('Hero video autoplay prevented:', error);
                         const enableAutoplayOnUserGesture = function () {
                             heroVideo.muted = true;
-                            heroVideo.play().then(function() {
+                            heroVideo.play().then(function () {
                                 document.removeEventListener('touchstart', enableAutoplayOnUserGesture);
                                 document.removeEventListener('click', enableAutoplayOnUserGesture);
                                 document.removeEventListener('scroll', enableAutoplayOnUserGesture);
-                            }).catch(function() {});
+                            }).catch(function () { });
                         };
                         document.addEventListener('touchstart', enableAutoplayOnUserGesture, { once: true });
                         document.addEventListener('click', enableAutoplayOnUserGesture, { once: true });
@@ -152,7 +152,7 @@
 
             heroVideo.addEventListener('ended', function () {
                 heroVideo.currentTime = 0;
-                heroVideo.play().catch(function() {});
+                heroVideo.play().catch(function () { });
             });
 
             heroVideo.addEventListener('error', function () {
@@ -232,9 +232,9 @@
                     $(this).html(countNumber);
                 });
             }, {
-                offset: "80%",
-                triggerOnce: true
-            }
+            offset: "80%",
+            triggerOnce: true
+        }
         );
 
         /* ======= CurrentYear ======= */

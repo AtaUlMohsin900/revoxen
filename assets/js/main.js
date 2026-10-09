@@ -125,29 +125,39 @@
             heroVideo.setAttribute('webkit-playsinline', '');
 
             function tryPlayHeroVideo() {
+                heroVideo.muted = true;
                 const playPromise = heroVideo.play();
                 if (playPromise !== undefined) {
                     playPromise.catch(function (error) {
                         console.warn('Hero video autoplay prevented:', error);
-                        heroVideo.muted = true;
-                        heroVideo.play().catch(function (err) {
-                            console.error('Hero video play failed:', err);
-                        });
+                        const enableAutoplayOnUserGesture = function () {
+                            heroVideo.muted = true;
+                            heroVideo.play().then(function() {
+                                document.removeEventListener('touchstart', enableAutoplayOnUserGesture);
+                                document.removeEventListener('click', enableAutoplayOnUserGesture);
+                                document.removeEventListener('scroll', enableAutoplayOnUserGesture);
+                            }).catch(function() {});
+                        };
+                        document.addEventListener('touchstart', enableAutoplayOnUserGesture, { once: true });
+                        document.addEventListener('click', enableAutoplayOnUserGesture, { once: true });
+                        document.addEventListener('scroll', enableAutoplayOnUserGesture, { once: true });
                     });
                 }
             }
 
             heroVideo.addEventListener('ended', function () {
                 heroVideo.currentTime = 0;
-                heroVideo.play();
+                heroVideo.play().catch(function() {});
             });
 
             heroVideo.addEventListener('error', function () {
                 console.error('Hero video error', heroVideo.error);
             });
 
+            heroVideo.addEventListener('canplay', tryPlayHeroVideo);
             heroVideo.addEventListener('canplaythrough', tryPlayHeroVideo);
-            setTimeout(tryPlayHeroVideo, 200);
+            heroVideo.addEventListener('loadeddata', tryPlayHeroVideo);
+            setTimeout(tryPlayHeroVideo, 100);
         }
 
         /* Scroll to Top */

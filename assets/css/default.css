@@ -38,44 +38,44 @@
     --p-size: 1rem;
     --p-weight: 400;
 
-    --header-bg-color: #21333e;
-    --nav-top-bg-color: #21333e;
-    --nav-sub-bg-color: #21333e;
-    --nav-holder-bg-color: #21333e;
+    --header-bg-color: #363435;
+    --nav-top-bg-color: #363435;
+    --nav-sub-bg-color: #363435;
+    --nav-holder-bg-color: #363435;
     --nav-brand-height: 35px;
-    --nav-item-color: #f9f9f9;
-    --hero-bg-color: #111117;
+    --nav-item-color: #F8FAFC;
+    --hero-bg-color: #363435;
     --footer-brand-height: 80px;
 
-    --primary-color: #058283;
-    --secondary-color: #00a6a6;
+    --primary-color: #EC3237;     /* Logo Red (Construction & Electrical) */
+    --secondary-color: #00AFEF;   /* Logo Cyan (IT & Networking) */
     
-    --white-color: #ffffff;
-    --black-color: #000007;
-    --dark-grey-color: #111117;
+    --white-color: #FFFFFF;
+    --black-color: #1E1C1D;
+    --dark-grey-color: #363435;
 
-    --primary-t-color: #21333e;
-    --secondary-t-color: #f9f9f9; 
-    --primary-p-color: #606d75;
-    --secondary-p-color: #c0c3d0;
-    --primary-b-color: #f9f9f9;
+    --primary-t-color: #363435;
+    --secondary-t-color: #F8FAFC; 
+    --primary-p-color: #606062;
+    --secondary-p-color: #858688;
+    --primary-b-color: #FFFFFF;
     --primary-l-color: rgba(0, 0, 0, .25);
     --secondary-l-color: rgba(255, 255, 255, 0.35);
 
-    --valid-color: #007a4d;
-    --invalid-color: #e34f4f;
+    --valid-color: #00AFEF;
+    --invalid-color: #EC3237;
 
-    --primary-bg-color: #f9f9f9;
-    --primary-bg-color-2: #f1f1f1;
-    --primary-bg-color-3: rgba(5, 130, 131, 0.15);
+    --primary-bg-color: #F8FAFC;
+    --primary-bg-color-2: #F1F5F9;
+    --primary-bg-color-3: rgba(236, 50, 55, 0.1);
 
-    --secondary-bg-color: #111117;
-    --secondary-bg-color-2: #080d10;
-    --secondary-bg-color-3: #191919;
+    --secondary-bg-color: #363435;
+    --secondary-bg-color-2: #1E1C1D;
+    --secondary-bg-color-3: #292728;
 
-    --card-bg-color: #ffffff;
+    --card-bg-color: #FFFFFF;
 
-    --footer-bg-color: #111117;
+    --footer-bg-color: #363435;
 }
 
 /* #endregion Root */

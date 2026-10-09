@@ -67,12 +67,94 @@ Author:    https://github.com/AtaUlMohsin900
 }
 
 :root {
-    --primary: #5d5c5c;
-    --secondary: #CC3237;
-    --light: #efe7ea;
-    --dark: #1a1a1a;
-    --white: #efe7ea;
-    --l-dark: #1a1a1a;
+    /* Exact Colors Extracted directly from Revoxen Logo Files */
+    --logo-red: #EC3237;          /* Brand Crimson Red (Construction & Electrical) */
+    --logo-red-dark: #C52F32;     /* Deep Red Hover */
+    --logo-cyan: #00AFEF;         /* Electric Tech Cyan (IT & Networking) */
+    --logo-cyan-dark: #0088BC;    /* Darker Cyan Hover */
+    --logo-charcoal: #363435;     /* Structural Dark Charcoal */
+    --logo-slate: #858688;        /* Silver Tech Slate */
+    
+    /* Core System Aliases */
+    --primary: #363435;
+    --secondary: #EC3237;
+    --accent-cyan: #00AFEF;
+    --light: #F8FAFC;
+    --dark: #1E1C1D;
+    --dark-surface: #292728;
+    --white: #FFFFFF;
+    
+    /* Text Mapping */
+    --text-dark: #363435;
+    --text-muted: #606062;
+    --text-light: #F8FAFC;
+    --text-slate: #858688;
+
+    /* Override Bootstrap 5 Overrides matching Revoxen Logo Colors */
+    --bs-primary: #EC3237;
+    --bs-primary-rgb: 236, 50, 55;
+    --bs-link-color: #EC3237;
+    --bs-link-hover-color: #C52F32;
+    --bs-focus-ring-color: rgba(236, 50, 55, 0.25);
+}
+
+/* ======= Theme Overrides for Bootstrap & UI Elements ======= */
+.accordion-button:not(.collapsed) {
+    color: var(--secondary);
+    background-color: rgba(236, 50, 55, 0.08);
+    box-shadow: inset 0 -1px 0 rgba(236, 50, 55, 0.15);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23EC3237'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button:focus {
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 0.25rem rgba(236, 50, 55, 0.25);
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 0.25rem rgba(236, 50, 55, 0.25);
+}
+
+.btn-primary {
+    background-color: var(--secondary) !important;
+    border-color: var(--secondary) !important;
+    color: #FFFFFF !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: var(--logo-red-dark) !important;
+    border-color: var(--logo-red-dark) !important;
+    box-shadow: 0 0 0 0.25rem rgba(236, 50, 55, 0.25) !important;
+}
+
+/* IT & Networking Accent Badges & Highlights */
+.tech-cyan, .badge-cyan {
+    color: var(--logo-cyan) !important;
+}
+
+.bg-cyan {
+    background-color: var(--logo-cyan) !important;
+    color: #FFFFFF !important;
+}
+
+.text-primary {
+    color: var(--secondary) !important;
+}
+
+.bg-primary {
+    background-color: var(--secondary) !important;
+}
+
+::selection {
+    background-color: var(--secondary);
+    color: #ffffff;
 }
 
 html,
@@ -83,11 +165,11 @@ body {
 }
 
 body {
-    background-color: #efe7ea;
-    font-family: "Albert Sans";
+    background-color: var(--light);
+    font-family: "Albert Sans", sans-serif;
     font-size: 17px;
     line-height: 28px;
-    color: #efe7ea;
+    color: var(--text-muted);
     font-weight: 400;
     letter-spacing: -0.2px;
     position: relative;
@@ -102,7 +184,7 @@ h5,
 h6 {
     font-family: "helvetica", sans-serif;
     -webkit-font-smoothing: antialiased;
-    color: var(--secondary);
+    color: var(--text-dark);
 }
 
 h1 {
@@ -441,7 +523,7 @@ button {
 .default-btn {
     display: inline-block;
     background: var(--secondary);
-    color: var(--primary);
+    color: #FFFFFF;
     font-family: "Albert Sans", sans-serif;
     font-size: 16px;
     font-weight: 600;
@@ -2010,10 +2092,10 @@ button {
 }
 
 .service-content {
-    box-shadow:
-        0 0 20px rgba(0, 0, 0, 0.3),
-        inset 0 0 20px rgba(0, 0, 0, 0.2);
-    background-color: #06ADF4;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    background-color: var(--dark-surface);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
     text-align: center;
     padding: 0 40px 40px;
     margin-top: -50px;
@@ -2042,7 +2124,7 @@ button {
 }
 
 .service-content h3 a {
-    color: var(--primary);
+    color: #FFFFFF;
 }
 
 .service-content .read-more {
@@ -3078,7 +3160,9 @@ button {
 }
 
 .blog-content {
-    background-color: #06ADF4;
+    background-color: #FFFFFF;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    border-radius: 0 0 8px 8px;
     padding: 30px;
 }
 

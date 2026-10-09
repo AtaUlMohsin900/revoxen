@@ -7,9 +7,14 @@
     "use strict";
 
     /* ======= Preloader ======= */
-    $(window).on('load', function () {
-        $('body').addClass('loaded');
-    });
+    function hidePreloader() {
+        if (!$('body').hasClass('loaded')) {
+            $('body').addClass('loaded');
+        }
+    }
+
+    $(window).on('load', hidePreloader);
+    setTimeout(hidePreloader, 2000); // Safety fallback so page never hangs on white screen
 
     $(document).ready(function () {
 
